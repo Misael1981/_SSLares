@@ -1,4 +1,7 @@
-@import url(./assets/CSS/header.css);
+@import url("./assets/CSS/header.css");
+@import url("./assets/CSS/carrosselPrincipal.css");
+@import url("./assets/CSS/ourProducts.css");
+@import url("./assets/CSS/banners.css");
 
 :root {
   /* Cores */
@@ -20,16 +23,17 @@
 
   /* Tipografia */
   --font-nunito: "Nunito", sans-serif;
-  --font-benas-neue: "Bebas Neue", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
 
   /* Tamanhos de fonte */
   --fonte-size-s: 0.813rem;
   --fonte-size-b: 1rem;
   --fonte-size-m: 1.25rem;
-  --fonte-size-xm: 1.563rem;
-  --fonte-size-l: 1.938rem;
-  --fonte-size-xl: 2.438rem;
-  --font-size-xxl: 2.625rem;
+  --fonte-size-xm: 1.5rem;
+  --fonte-size-xmm: 1.75rem;
+  --fonte-size-l: 2rem;
+  --fonte-size-xl: 2.5rem;
+  --font-size-xxl: 3rem;
   --font-size-xxxl: 4.5rem;
 
   /* Altura da linhas */
@@ -65,6 +69,42 @@
   --gap-xxxl: 6rem;
 }
 
+* {
+  font-family: var(--font-nunito);
+}
+
 body {
   width: 100%;
+  background-color: #ccc;
+}
+
+.ourProducts {
+  width: 90vw;
+  margin: var(--margin-xl) auto;
+}
+
+.subtitle {
+  background-color: var(--cor-neutra-dark);
+  padding: var(--padding-xl);
+  text-align: center;
+  font-size: var(--fonte-size-l);
+  color: var(--cor-primary-red);
+  font-family: var(--font-nunito);
+  font-weight: 700;
+}
+
+/* ===== Botões ===== */
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.5rem 1rem 2.3rem;
+  background: linear-gradient(130deg, red 93%, transparent 90%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }

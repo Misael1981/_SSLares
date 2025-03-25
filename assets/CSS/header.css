@@ -33,12 +33,24 @@
   &.active-menu .linha:nth-child(2) {
     width: 0;
   }
+  @media screen and (width > 1020px) {
+    display: none;
+  }
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  right: 0;
   background-color: var(--cor-neutra-dark);
   width: 100%;
   height: 5rem;
+  font-family: var(--font-nunito);
+  z-index: 11;
+
+  @media screen and (width > 1020px) {
+    height: 7rem;
+  }
 
   .header__nav {
     max-width: 90%;
@@ -56,6 +68,9 @@
         width: 100%;
         height: auto;
       }
+      @media screen and (width > 1020px) {
+        width: 7rem;
+      }
     }
 
     .header__nav-list {
@@ -69,6 +84,7 @@
       visibility: hidden;
       transition: 0.3s;
       overflow: hidden;
+      z-index: 10;
 
       display: flex;
       flex-direction: column;
@@ -79,11 +95,35 @@
       li a {
         color: #ccc;
         font-size: 2.5rem;
+        font-weight: 600;
       }
 
       &.open {
         visibility: visible;
         height: calc(100vh - 5rem);
+      }
+      @media screen and (width > 1020px) {
+        visibility: visible;
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        backdrop-filter: inherit;
+        flex-direction: row;
+        padding: 1px;
+
+        li a {
+          font-size: 1.5rem;
+        }
+
+        li:last-child {
+          padding-left: 3rem;
+        }
+      }
+      @media screen and (width > 1200px) {
+        li a {
+          font-size: var(--fonte-size-l);
+        }
       }
     }
   }

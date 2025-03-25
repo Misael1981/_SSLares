@@ -1,0 +1,56 @@
+.bannerOne {
+  width: 100%;
+  background-color: #000;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+
+  .bannerOne-titulo {
+    text-align: center;
+    color: #fff;
+    padding-bottom: var(--padding-xl);
+
+    h4 {
+      font-size: var(--fonte-size-l);
+      @media screen and (width > 1020px) {
+        font-size: var(--fonte-size-xl);
+      }
+    }
+  }
+  .bannerOne-descricao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gap-l);
+
+    @media screen and (width > 1020px) {
+      max-width: 70vw;
+      margin: 0 auto;
+
+      h5 {
+        font-size: var(--fonte-size-l);
+      }
+      p {
+        font-size: var(--fonte-size-m);
+      }
+    }
+
+    .banner-card {
+      flex: 1 0 250px;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      color: #fff;
+
+      .icone-banner {
+        color: #ff0000;
+        font-size: var(--font-size-xxl);
+      }
+      h5 {
+        color: #ff0000;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}
