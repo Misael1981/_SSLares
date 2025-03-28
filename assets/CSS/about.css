@@ -1,0 +1,127 @@
+.about {
+  .about__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xl);
+    margin: var(--margin-xl) auto;
+
+    .about__container-content {
+      flex: 1 0 15rem;
+      background-color: var(--cor-neutra-dark);
+      padding: var(--padding-l);
+      border: 2px solid var(--cor-primary-red);
+      border-radius: 1rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: var(--gap-xl);
+      font-size: var(--fonte-size-xm);
+
+      @media screen and (width > 1020px) {
+        max-width: 40%;
+      }
+
+      .banner-card {
+        background-image: url("../img/mini-banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
+        min-height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .cards {
+      flex: 1 0 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 125vh;
+
+      .magic__card {
+        border-radius: 2rem;
+        width: 60%;
+        min-width: 300px;
+        height: 16vw;
+
+        .task {
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          transform-style: preserve-3d;
+          font-size: var(--fonte-size-m);
+
+          .abstract h3 {
+            font-size: var(--fonte-size-l);
+            margin-bottom: var(--margin-l);
+            text-align: center;
+          }
+
+          .abstract,
+          .details {
+            box-sizing: border-box;
+            padding: var(--padding-l);
+            width: 100%;
+            position: relative;
+            background: #1f1e1f;
+            color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          }
+          &:hover .abstract,
+          &:hover .details {
+            background: #e90736;
+            color: #000;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          }
+          .abstract {
+            transition: 0.3s ease all;
+          }
+
+          .details {
+            max-height: 0;
+            padding: 0;
+            overflow: hidden;
+            visibility: hidden;
+            transform: translateX(-180deg);
+            transform-origin: top center;
+            backface-visibility: hidden;
+            transition: 0.3s transform ease;
+
+            .details__inner {
+              padding: 15px 30px;
+              border-top: 1px solid black;
+            }
+          }
+
+          .detais:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: grey;
+          }
+          &:hover .details {
+            max-height: none;
+            overflow: visible;
+            visibility: visible;
+            transform: rotateX("0deg");
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner-card img {
+  max-width: 8rem;
+}

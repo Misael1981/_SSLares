@@ -2,18 +2,22 @@
 @import url("./assets/CSS/carrosselPrincipal.css");
 @import url("./assets/CSS/ourProducts.css");
 @import url("./assets/CSS/banners.css");
+@import url("./assets/CSS/about.css");
+@import url("./assets/CSS/partner.css");
+@import url("./assets/CSS/benefits.css");
+@import url("./assets/CSS/footer.css");
 
 :root {
   /* Cores */
   --cor-neutra-dark: #1f1e1f;
   --cor-primary-red: #ed0132ff;
+  --cor-terciaria-medio: #d2f704;
 
   --cor-primaria-dark: #c13724;
   --cor-primaria-light: #ee6451;
   --cor-primaria-bg-menu: rgba(238, 100, 81, 0.4);
   --cor-secundaria-light: #fff5eb;
   --cor-secundaria-dark: #f5e6d6;
-  --cor-terciaria-medio: #cbda74;
   --cor-terciaria-dark: #a2b72b;
   --cor-terciaria-light: #eff2e1;
   --cor-neutra-medio: #b9b9b9;
@@ -42,6 +46,7 @@
   /* Espaçamentos */
   --padding-xs: 0.25rem;
   --padding-s: 0.5rem;
+  --padding-ms: 0.75rem;
   --padding-m: 1rem;
   --padding-l: 1.5rem;
   --padding-xl: 2rem;
@@ -78,7 +83,10 @@ body {
   background-color: #ccc;
 }
 
-.ourProducts {
+.ourProducts,
+.about,
+.partner,
+.benefits {
   width: 90vw;
   margin: var(--margin-xl) auto;
 }

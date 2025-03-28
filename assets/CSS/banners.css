@@ -54,3 +54,34 @@
     }
   }
 }
+
+/* ===== Banner 02 ===== */
+
+.bannerTwo {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/corrente.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.bannerTwo span {
+  font-size: 2rem;
+  color: red;
+}
+
+.bannerTwo h3 {
+  padding-top: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.bannerTwo p {
+  margin: 1rem auto;
+  max-width: 60rem;
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+}

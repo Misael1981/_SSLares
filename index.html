@@ -33,9 +33,10 @@
     <!-- ===== Js ===== -->
     <script src="./main.js" type="module" defer></script>
 
-    <title>SSLares</title>
+    <title>SsLares</title>
   </head>
   <body>
+    <!-- ===== Header ===== -->
     <header class="header">
       <nav class="header__nav">
         <div class="header__img">
@@ -43,7 +44,7 @@
         </div>
         <ul class="header__nav-list">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Produtos</a></li>
+          <li><a href="#loja.html">Produtos</a></li>
           <li><a href="#">Calculadora</a></li>
           <li><a href="#">Seja parceiro</a></li>
           <li><a href="#">Contato</a></li>
@@ -55,7 +56,6 @@
         </button>
       </nav>
     </header>
-
     <main>
       <!-- ===== Carrossel Home ===== -->
       <section class="carrosselPrincipal">
@@ -243,7 +243,7 @@
           <div class="about__container-content">
             <div class="banner-card">
               <img
-                src="img/logo-background(2).png"
+                src="./assets/img/logo.svg"
                 alt="Logo da SSlares sobresporta sobre um projeto de construção."
               />
             </div>
@@ -276,7 +276,7 @@
             </p>
             <div class="banner-card">
               <img
-                src="img/logo-background(2).png"
+                src="./assets/img/logo.svg"
                 alt="Logo da SSlares sobresporta sobre um projeto de construção."
               />
             </div>
@@ -361,6 +361,333 @@
           </div>
         </div>
       </section>
+      <!-- ===== Banner 02 ===== -->
+      <section class="bannerTwo">
+        <span>Junte-se a Nós</span>
+        <h3>QUER ECONOMIZAR NA SUA OBRA?</h3>
+        <p>Economize sem perder qualidade.</p>
+        <p>Conheça nossos produtos.</p>
+        <a href="https://wa.me/5535991972424" target="_blank" class="btn"
+          >Quero</a
+        >
+      </section>
+      <!-- ===== Seja Parceiro ===== -->
+      <section class="partner" id="partner">
+        <div class="partner__title subtitle">
+          <h2>Quer ser um parceiro SsLares?</h2>
+        </div>
+
+        <div class="partner__bannerForm">
+          <div class="partner__banner">
+            <div class="partner__description">
+              <p>* Fale com um especialista agora mesmo.</p>
+              <p>
+                * Aqui você é prioridade e terá atenção exclusiva de nossos
+                atendentes.
+              </p>
+            </div>
+            <img
+              class="partner__image"
+              src="./assets/img/sejaParceiro.jpg"
+              alt="Banner da SsLares"
+            />
+          </div>
+          <div class="partner__form">
+            <div class="partner__form-header">
+              <h2>Faça seu cadastro</h2>
+            </div>
+
+            <form id="form" class="form">
+              <label for="username"
+                >Nome do usuário
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Digite o nome do usuario..."
+                />
+                <span></span>
+              </label>
+
+              <label for="email"
+                >Email
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Digite o seu email..."
+                />
+                <span></span>
+              </label>
+
+              <label for="telefone"
+                >Telefone
+                <input
+                  type="tel"
+                  id="telefone"
+                  placeholder="Digite seu telefone..."
+                />
+                <span></span>
+              </label>
+
+              <label for="cidade"
+                >De qual cidade está falando?
+                <input
+                  type="text"
+                  id="cidade"
+                  placeholder="Digite sua cidade..."
+                />
+                <span></span>
+              </label>
+
+              <label for="sobre"
+                >Assunto
+                <textarea
+                  id="assunto"
+                  name="sobre"
+                  rows="4"
+                  cols="50"
+                  placeholder="Conte um pouco sobre você..."
+                ></textarea>
+              </label>
+
+              <button type="submit">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Beneficios ===== -->
+      <section class="benefits">
+        <div class="benefits__header">
+          <div class="subtitle">
+            <h2>BENEFÍCIOS</h2>
+          </div>
+          <div class="benefits__header-content">
+            <p>Qual a sua área de atuação?</p>
+            <p>Nós temos a solução</p>
+          </div>
+        </div>
+        <div class="benefits__container">
+          <div class="benefits__container-stand">
+            <div class="stand-header">
+              <img src="./assets/img/icons/home.svg" alt="" />
+              <h3>Lojista</h3>
+              <p>
+                Materiais de construção, home centers, distribuidores e
+                atacadistas
+              </p>
+            </div>
+
+            <div class="benefits__content">
+              <h4>Principais benefícios</h4>
+              <ul>
+                <li><i class="bi bi-check-lg"></i> Mais margem de lucro;</li>
+                <li><i class="bi bi-check-lg"></i> Produtos de alto giro;</li>
+                <li><i class="bi bi-check-lg"></i> Entrega rápida;</li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Flexibilidade com agendamento
+                  de pedidos;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Produtos de qualidade para seus
+                  clientes;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Condições especiais de
+                  pagamento.*
+                </li>
+              </ul>
+              <p>* Condições especiais sujeitas a análise interna</p>
+            </div>
+
+            <div class="benefits__buttons">
+              <a
+                class="btn"
+                href="https://api.whatsapp.com/send?phone=5535991972424&text=Olá! Sou um lojista interessado em mais informações."
+                target="_blank"
+                >Whats App</a
+              >
+              <a class="btn" href="#">E-mail</a>
+            </div>
+
+            <div class="beneficios-radape">
+              <p>
+                Solicite um orçamento clicando em qualquer um dos botões acima
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits__container-stand">
+            <div class="stand-header">
+              <img src="./assets/img/icons/engineer.svg" alt="" />
+              <h3>Construtor</h3>
+              <p>
+                Construtora, incorporadora, profissional da construção civil ou
+                obra própria (CNPJ)
+              </p>
+            </div>
+
+            <div class="benefits__content">
+              <h4>Principais benefícios</h4>
+              <ul>
+                <li><i class="bi bi-check-lg"></i> Entrega rápida;</li>
+                <li><i class="bi bi-check-lg"></i> Economia na instalação;</li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Redução significativa no tempo
+                  de aplicação;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Qualidade na execução e entrega
+                  do trabalho;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Flexibilidade com agendamento
+                  de pedidos;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Condições especiais de
+                  pagamento.*
+                </li>
+              </ul>
+              <p>* Condições especiais sujeitas a análise interna</p>
+            </div>
+
+            <div class="benefits__buttons">
+              <a
+                class="btn"
+                href="https://api.whatsapp.com/send?phone=5535991972424&text=Olá! Sou um construtor interessado em mais informações."
+                target="_blank"
+                >Whats App</a
+              >
+              <a class="btn" href="#">E-mail</a>
+            </div>
+
+            <div class="beneficios-radape">
+              <p>
+                Solicite um orçamento clicando em qualquer um dos botões acima
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits__container-stand">
+            <div class="stand-header">
+              <img src="./assets/img/icons/person.svg" alt="" />
+              <h3>Pessoa física</h3>
+              <p>Obra própria (CPF) e pequenas compras</p>
+            </div>
+
+            <div class="benefits__content">
+              <h4>Principais benefícios</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-check-lg"></i> Produtos de fácil aplicação
+                  (DIY);
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Qualidade e acabamento
+                  profissional;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Economia na instalação do seu
+                  revestimento;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Produtos desenvolvidos em
+                  parceria com os melhores profissionais da área;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Produtos utilizados por grandes
+                  nomes da construção civil;
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Disponível em diversas lojas em
+                  todo Brasil.
+                </li>
+              </ul>
+            </div>
+
+            <div class="benefits__buttons">
+              <a
+                class="btn"
+                href="https://api.whatsapp.com/send?phone=5535991972424&text=Olá! Sou uma pessoa física interessada em mais informações."
+                target="_blank"
+                >Whats App</a
+              >
+              <a class="btn" href="#">E-mail</a>
+            </div>
+
+            <div class="beneficios-radape">
+              <p>
+                Solicite um orçamento clicando em qualquer um dos botões acima
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Footer ===== -->
+      <footer>
+        <section>
+          <h3>Contato</h3>
+          <address>
+            <ul class="links__social-midias">
+              <h5>Nossa Mídias</h5>
+              <li>
+                <a href="#"><i class="bi bi-whatsapp"></i>035 991972424</a>
+              </li>
+              <li>
+                <a href="mailto:sslaresmg@gmail.com"
+                  ><i class="icone-footer bi bi-envelope email"></i
+                  >sslaresmg@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i>Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-linkedin"></i>Linkedin</a>
+              </li>
+            </ul>
+            <div class="address__container">
+              <h5>
+                <i class="icone-footer bi bi-geo-alt-fill"></i> Onde estamos
+              </h5>
+              <div class="address__container-content">
+                <div class="addressBox">
+                  <p>Rua José Ribeiro Coutinho n° 499</p>
+                  <p>Bairro Primavera</p>
+                  <p>Congonhal MG</p>
+                </div>
+                <div class="mapBox">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.845996454735!2d-46.04914222583669!3d-22.156019888389967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cbcda8d8294417%3A0xe6f9bf5c0cad41a1!2sSSLARES!5e0!3m2!1sen!2sbr!4v1715625569113!5m2!1sen!2sbr"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </address>
+        </section>
+        <section class="footerDev">
+          <div class="footerDev__img">
+            <img src="./assets/img/logo_sem-fundo.svg" alt="" />
+          </div>
+          <ul>
+            <li>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
     </main>
 
     <!-- ===== SWIPER ===== -->
