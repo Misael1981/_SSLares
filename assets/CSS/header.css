@@ -102,6 +102,7 @@
         visibility: visible;
         height: calc(100vh - 5rem);
       }
+
       @media screen and (width > 1020px) {
         visibility: visible;
         position: static;
@@ -128,3 +129,22 @@
     }
   }
 }
+
+/* .header-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-primary-red);
+    transition: width 0.3s ease;
+  }
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+} */

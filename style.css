@@ -6,6 +6,10 @@
 @import url("./assets/CSS/partner.css");
 @import url("./assets/CSS/benefits.css");
 @import url("./assets/CSS/footer.css");
+@import url("./assets/CSS/storyHome.css");
+@import url("./assets/CSS/productsStore.css");
+@import url("./assets/CSS/calculator.css");
+@import url("./assets/CSS/contact.css");
 
 :root {
   /* Cores */
@@ -85,7 +89,6 @@ body {
 
 .ourProducts,
 .about,
-.partner,
 .benefits {
   width: 90vw;
   margin: var(--margin-xl) auto;
@@ -115,4 +118,34 @@ body {
 
 .btn:hover {
   transform: scale(1.1);
+}
+
+.main {
+  background-color: #111111;
+  width: 100%;
+}
+
+/* ===== Títulos Container ===== */
+.title-container {
+  padding: var(--padding-4xl) var(--padding-xl);
+  .subheader {
+    color: #ccc;
+    font-size: var(--fonte-size-xl);
+    font-weight: 600;
+    position: relative;
+    isolation: isolate;
+    padding-left: 25px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 70px;
+      aspect-ratio: 1;
+      background-color: var(--cor-primary-red);
+      z-index: -1;
+    }
+  }
 }

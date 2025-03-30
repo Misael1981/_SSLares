@@ -1,0 +1,64 @@
+.contact {
+  width: 100%;
+  margin-top: var(--margin-xl);
+  background-image: url(../img/banner-contato-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .contact-subtitle {
+    color: #fff;
+    font-size: var(--fonte-size-l);
+    font-weight: 600;
+    text-align: center;
+
+    strong {
+      color: var(--cor-primary-red);
+      font-weight: 700;
+    }
+  }
+  .social-midial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--margin-xl) 0;
+
+    h6 {
+      font-size: var(--fonte-size-l);
+      color: var(--cor-primary-red);
+      font-weight: 700;
+      margin-bottom: var(--margin-l);
+      text-align: center;
+    }
+    ul {
+      li {
+        padding: var(--padding-s);
+        a {
+          display: inline-block;
+          color: #fff;
+          font-size: var(--fonte-size-xm);
+          padding: var(--margin-s);
+
+          i {
+            margin-right: var(--margin-s);
+            background-color: var(--cor-primary-red);
+            padding: var(--padding-s);
+            border-radius: 50%;
+          }
+        }
+        &:hover a {
+          color: var(--cor-primary-red);
+        }
+        &:hover i {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.title-container.contact-title {
+  p {
+    color: #fff;
+  }
+}

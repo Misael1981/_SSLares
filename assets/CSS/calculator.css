@@ -1,0 +1,119 @@
+.calculator {
+  width: 95%;
+  margin: 0 auto;
+  color: #ccc;
+
+  @media screen and (width > 1250px) {
+    width: 85%;
+  }
+
+  .calculator-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-xl);
+    @media screen and (width > 1020px) {
+      flex-direction: row;
+    }
+
+    .calculator-header__description {
+      flex: 1;
+
+      .calculator-header__description-txt {
+        h4 {
+          font-size: var(--fonte-size-l);
+          font-weight: 600;
+          margin-bottom: var(--margin-xl);
+        }
+        p {
+          font-size: var(--fonte-size-m);
+          margin-bottom: var(--margin-xl);
+          line-height: 1.2;
+        }
+      }
+      .calculator-header__description-form {
+        form {
+          label {
+            display: block;
+            font-size: var(--fonte-size-xm);
+            margin-bottom: var(--margin-m);
+          }
+          select {
+            font-size: var(--fonte-size-xm);
+            padding: var(--padding-m);
+            border-radius: 20rem;
+            outline: 0;
+            border: 0;
+            margin-bottom: var(--margin-m);
+          }
+        }
+      }
+    }
+    .calculator-header__image {
+      max-width: 80vw;
+      text-align: center;
+      margin-bottom: var(--margin-xl);
+      @media screen and (width > 1020px) {
+        flex: 1;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 1rem;
+        outline: 5px solid black;
+      }
+    }
+  }
+  .calculator__inputs {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: var(--gap-xl);
+      color: #000;
+      font-size: var(--fonte-size-xm);
+
+      fieldset {
+        flex: 1 0 15rem;
+        max-width: 60%;
+        background: linear-gradient(60deg, #969595, #d3d3d3, #a9a9a9);
+        box-shadow: inset 10px 2px 6px 1px rgba(0, 0, 0, 0.3);
+        padding: var(--padding-xl);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (width > 1020px) {
+          max-width: 25rem;
+        }
+
+        label {
+          display: block;
+          font-weight: 700;
+          text-align: center;
+        }
+        input {
+          margin: var(--margin-m) 0;
+          font-size: var(--fonte-size-m);
+          padding: var(--padding-ms);
+          border: 0;
+          outline: 0;
+          border-radius: 1rem;
+        }
+        .output-input {
+          display: inline-block;
+          width: 80%;
+          height: 2.5rem;
+          margin-top: var(--fonte-size-m);
+          font-size: var(--fonte-size-m);
+          background-color: #f0f0f0;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.storyHome {
+  width: 100%;
+  background-image: url(../img/canteiro-obra.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .storyHome__image {
+    width: 100%;
+    img {
+      width: 50%;
+    }
+  }
+}

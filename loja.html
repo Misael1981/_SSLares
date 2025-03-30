@@ -34,5 +34,444 @@
 
     <title>SsLares Loja</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__img">
+          <img src="./assets/img/logo.svg" alt="Logo da SSLares" />
+        </div>
+        <ul class="header__nav-list">
+          <li>
+            <a class="header-link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="header-link" href="./loja.html">Produtos</a>
+          </li>
+          <li>
+            <a class="header-link" href="#">Calculadora</a>
+          </li>
+          <li>
+            <a class="header-link" href="#">Seja parceiro</a>
+          </li>
+          <li>
+            <a class="header-link" href="#">Contato</a>
+          </li>
+        </ul>
+        <button id="btn-menu">
+          <span class="linha"></span>
+          <span class="linha"></span>
+          <span class="linha"></span>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="storyHome">
+        <div class="storyHome__image">
+          <img src="./assets/img/logo-cabecalho-loja.png" alt="" />
+        </div>
+      </section>
+      <!-- ===== Produtos Loja ===== -->
+      <section class="productsStore">
+        <div class="title-container">
+          <p class="subheader">Produtos</p>
+        </div>
+
+        <form class="productsStore__search">
+          <label for="searchInput">
+            <span><i class="bi bi-search"></i></span>
+            <input
+              type="search"
+              onkeyup="filtrar()"
+              id="searchInput"
+              placeholder="Pesquisar produtos"
+            />
+          </label>
+        </form>
+        <!-- === Carrossel Loja === -->
+        <div class="swiper swiperStory">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/cunhas-green.png"
+                  alt="Cunha niveladora"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Cunha Niveladora</h3>
+              </div>
+              <div class="card-data">
+                <h4>Cunha Niveladora</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/sortidos.png"
+                  alt="Cunhas e espaçadores de plástico para o assentamento de pisos"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Cunha & Espaçadores</h3>
+              </div>
+              <div class="card-data">
+                <h4>Cunha & Espaçadores</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/smart-premium.png"
+                  alt="Espaçadores de plástico para o assentamento de pisos"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Espaçador Smart Premium</h3>
+              </div>
+              <div class="card-data">
+                <h4>Espaçador Smart Premium</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/slim-premium.png"
+                  alt="Espaçadores de plástico para o assentamento de pisos"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Espaçador Slim Premium</h3>
+              </div>
+              <div class="card-data">
+                <h4>Espaçador Slim Premium</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/desempenadeira-lisa.png"
+                  alt="Desempenadeira, ferramenta usada preferencialmente na construção civil"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Desempenadeira Lisa</h3>
+              </div>
+              <div class="card-data">
+                <h4>Desempenadeira Lisa</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/desempenadeira-corrugada.png"
+                  alt="Desempenadeira, ferramenta usada preferencialmente na construção civil"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Desempenadeira Corrugada</h3>
+              </div>
+              <div class="card-data">
+                <h4>Desempenadeira Corrugada</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/desempenadeira-espuma.png"
+                  alt="Desempenadeira, ferramenta usada preferencialmente na construção civil"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Desempenadeira Espuma</h3>
+              </div>
+              <div class="card-data">
+                <h4>Desempenadeira Espuma</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/ralo-invisivel.png"
+                  alt="Ralo de plástico, usado para a construção civil"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Ralo Invisível</h3>
+              </div>
+              <div class="card-data">
+                <h4>Ralo Invisível</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/ralo-linear.png"
+                  alt="Ralo de plástico, usado para a construção civil"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Ralo Linear</h3>
+              </div>
+              <div class="card-data">
+                <h4>Ralo Linear</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/paflon.png"
+                  alt="Luminária de plástico"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Plafon</h3>
+              </div>
+              <div class="card-data">
+                <h4>Plafon</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slide-img">
+                <img
+                  src="./assets/img/img_ourProducts/bloco-espuma.png"
+                  alt="Bloco de espuma usado preferencialmente na construção civil"
+                />
+              </div>
+              <div class="detail-box">
+                <h3>Bloco de Espuma</h3>
+              </div>
+              <div class="card-data">
+                <h4>Bloco de Espuma</h4>
+                <a class="btn" href="#">Veja Item</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- ===== Calculadora ===== -->
+      <section class="calculator">
+        <div class="title-container">
+          <p class="subheader">Calculadora</p>
+        </div>
+        <div class="calculator-header">
+          <div class="calculator-header__description">
+            <div class="calculator-header__description-txt">
+              <h4>Calcule de forma rápido e fácil</h4>
+              <p>
+                Com nossa calculadora de materiais, você descobre de forma
+                rápida e fácil a quantidade recomendada de materiais para fazer
+                a separação e nivelamento de cada piso. Você só precisa escolher
+                o tipo de medida (cm ou in), nos informar o comprimento do piso
+                e sua largura. Com essas informações nossa calculadora irá te
+                dizer o recomendado para cada lado do piso e a somatória final,
+                levando em considerações todos os lados.
+              </p>
+            </div>
+            <div class="calculator-header__description-form">
+              <form>
+                <label>Qual o tipo de medida?</label>
+                <select class="seletor__calculadora">
+                  <option value="opcao1">Centímetro (cm)</option>
+                  <option value="opcao2">Polegadas (in)</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="calculator-header__image">
+            <img
+              src="./assets/img/mostruario-calculadora.jpg"
+              alt="Mostruário demostrando a quantida de espaçadores por plástico"
+            />
+          </div>
+        </div>
+        <div class="calculator__inputs">
+          <form>
+            <fieldset id="calculatorOne">
+              <label>Comprimento X</label>
+              <input
+                type="number"
+                id="comprimentoX"
+                placeholder="Insira a medida"
+              />
+              <label for="comprimentoX">
+                Recomendado:
+                <span class="output-input" id="recomendadaX"></span>
+              </label>
+            </fieldset>
+
+            <fieldset id="calculatorTwo">
+              <label>Comprimento Y</label>
+              <input
+                type="number"
+                id="comprimentoY"
+                placeholder="Insira a medida"
+              />
+              <label for="comprimentoY">
+                Recomendado:
+                <span class="output-input" id="recomendadaY"></span>
+              </label>
+            </fieldset>
+
+            <fieldset id="calculatorThree">
+              <label>Área Total de Assentamento</label>
+              <input
+                type="number"
+                id="areaTotal"
+                placeholder="Insira a medida"
+              />
+              <label for="areaTotal">
+                Recomendado:
+                <span class="output-input" id="comprimentoTotal"></span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <!-- ===== Seja Parceiro ===== -->
+      <section class="partner" id="partner">
+        <div class="title-container">
+          <p class="subheader">Seja Parceiro</p>
+        </div>
+
+        <div class="partner__bannerForm">
+          <div class="partner__banner">
+            <div class="partner__description">
+              <p>* Fale com um especialista agora mesmo.</p>
+              <p>
+                * Aqui você é prioridade e terá atenção exclusiva de nossos
+                atendentes.
+              </p>
+            </div>
+            <img
+              class="partner__image"
+              src="./assets/img/sejaParceiro.jpg"
+              alt="Banner da SsLares"
+            />
+          </div>
+          <div class="partner__form">
+            <div class="partner__form-header">
+              <h2>Faça seu cadastro</h2>
+            </div>
+
+            <form id="form" class="form">
+              <label for="username"
+                >Nome do usuário
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Digite o nome do usuario..."
+                />
+                <span></span>
+              </label>
+
+              <label for="email"
+                >Email
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Digite o seu email..."
+                />
+                <span></span>
+              </label>
+
+              <label for="telefone"
+                >Telefone
+                <input
+                  type="tel"
+                  id="telefone"
+                  placeholder="Digite seu telefone..."
+                />
+                <span></span>
+              </label>
+
+              <label for="cidade"
+                >De qual cidade está falando?
+                <input
+                  type="text"
+                  id="cidade"
+                  placeholder="Digite sua cidade..."
+                />
+                <span></span>
+              </label>
+
+              <label for="sobre"
+                >Assunto
+                <textarea
+                  id="assunto"
+                  name="sobre"
+                  rows="4"
+                  cols="50"
+                  placeholder="Conte um pouco sobre você..."
+                ></textarea>
+              </label>
+
+              <button type="submit">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="title-container contact-title">
+          <p class="subheader">Contato</p>
+        </div>
+        <div class="contact-subtitle">
+          <h5>
+            Entre em <strong>contato</strong> e saiba mais sobre
+            <strong>nossas atualizações</strong>
+          </h5>
+        </div>
+        <div class="social-midial">
+          <ul>
+            <li>
+              <h6>Nossas Mídias</h6>
+              <a href="#"><i class="bi bi-whatsapp"></i>035 991972424</a>
+            </li>
+            <li>
+              <a href="mailto:sslaresmg@gmail.com"
+                ><i class="icone-footer bi bi-envelope email"></i
+                >sslaresmg@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i>Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-linkedin"></i>Linkedin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="location">
+          <h6>Onde Estamos</h6>
+          <address class="addressBox">
+            <p>* Rua José Ribeiro Coutinho, nº 499</p>
+            <p>* Bairro Primavera</p>
+            <p>* Congonhal, MG</p>
+          </address>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
