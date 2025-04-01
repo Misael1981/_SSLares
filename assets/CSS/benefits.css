@@ -21,6 +21,7 @@
       border-radius: 1rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
       padding: var(--padding-m);
+      color: #111111;
 
       .stand-header {
         text-align: center;
@@ -53,7 +54,7 @@
             font-size: var(--fonte-size-m);
 
             i {
-              color: var(--cor-terciaria-dark);
+              color: var(--cor-green-informative);
             }
           }
         }

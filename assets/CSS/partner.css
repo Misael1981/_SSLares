@@ -7,7 +7,7 @@
   padding-bottom: var(--padding-m);
   box-sizing: border-box;
 
-  @media screen and (width > 1250px) {
+  @media screen and (width > 1220px) {
     width: 75%;
   }
 
@@ -21,7 +21,7 @@
     @media screen and (width > 720px) {
       padding: 0 var(--padding-xl) var(--padding-m);
     }
-    @media screen and (width > 1220px) {
+    @media screen and (width > 1620px) {
       flex-direction: row;
       justify-content: center;
       align-items: center;

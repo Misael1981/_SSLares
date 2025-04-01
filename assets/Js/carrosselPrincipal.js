@@ -4,9 +4,9 @@ export function swiperHome() {
     effect: "fade",
     grabCursor: true,
     loop: true,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 4000,
+    },
     centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",

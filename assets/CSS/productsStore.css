@@ -1,7 +1,7 @@
 .productsStore {
   width: 90%;
-  height: auto;
   background-color: #232220;
+  height: auto;
   margin: -3rem auto 0;
   border-radius: 1rem;
   padding-bottom: var(--padding-m);

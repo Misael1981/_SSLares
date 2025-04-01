@@ -15,7 +15,7 @@
   /* Cores */
   --cor-neutra-dark: #1f1e1f;
   --cor-primary-red: #ed0132ff;
-  --cor-terciaria-medio: #d2f704;
+  --cor-green-informative: #87e987;
 
   --cor-primaria-dark: #c13724;
   --cor-primaria-light: #ee6451;
@@ -84,11 +84,10 @@
 
 body {
   width: 100%;
-  background-color: #ccc;
+  background-color: #111111;
+  color: #ccc;
 }
 
-.ourProducts,
-.about,
 .benefits {
   width: 90vw;
   margin: var(--margin-xl) auto;

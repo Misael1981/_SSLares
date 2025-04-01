@@ -1,7 +1,6 @@
 .ourProducts {
   .swiper-products {
     width: 100%;
-    margin: var(--margin-l) auto;
 
     .swiper-wrapper {
       width: 100%;
@@ -44,4 +43,96 @@
       }
     }
   }
+}
+
+.ourProducts__descriptiveText {
+  width: 80%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: var(--padding-l);
+  border: 0.5px solid #616161;
+  box-shadow: inset 0 0 15px #777676;
+  border-radius: 0.5rem;
+}
+
+.product__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-xl);
+}
+
+.product-title {
+  font-size: var(--fonte-size-l);
+  font-weight: 600;
+}
+
+.product-title.product-vissible {
+  padding: var(--padding-xl) var(--padding-xl) var(--padding-xl) 0;
+}
+
+.product-see {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--cor-green-informative);
+  font-size: var(--fonte-size-m);
+  padding: var(--padding-m);
+  border: 1px solid var(--cor-green-informative);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 15px var(--cor-green-informative);
+  cursor: pointer;
+}
+
+.product__output {
+  display: flex;
+  justify-content: center;
+  transition: max-height 0.5s ease-in-out; /* Adiciona transição aqui */
+}
+
+.product__content {
+  padding: var(--padding-m) 0;
+  font-size: var(--fonte-size-m);
+  line-height: 1.2;
+  max-height: 0; /* Define um max-height inicial */
+  overflow: hidden;
+  transition: max-height 1s ease-in-out; /* Adiciona transição aqui */
+}
+
+.product__content.product-close {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.product__content.product-open {
+  visibility: visible;
+  max-height: 100rem;
+}
+
+.product__content.product-open .product__content {
+  visibility: visible;
+  max-height: 100rem;
+}
+
+.product__output.product-close {
+  visibility: hidden;
+  max-height: 0; /* Usa max-height em vez de max-width */
+}
+
+.product__output.product-open {
+  visibility: visible;
+  max-height: 100rem;
+}
+
+.product-see-output {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--cor-green-informative);
+  font-size: var(--fonte-size-m);
+  padding: var(--padding-m);
+  border: 1px solid var(--cor-green-informative);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 15px var(--cor-green-informative);
+  cursor: pointer;
 }
