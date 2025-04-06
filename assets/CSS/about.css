@@ -24,6 +24,9 @@
     @media screen and (width > 1120px) {
       flex-direction: row;
     }
+    @media screen and (width > 1420px) {
+      margin-top: -3rem;
+    }
 
     .about__container-content {
       flex: 1;
@@ -36,11 +39,15 @@
       flex-direction: column;
       justify-content: space-between;
       gap: var(--gap-xl);
-      font-size: var(--fonte-size-xm);
+      font-size: var(--fonte-size-m);
       line-height: 1.2;
       text-align: justify;
 
+      @media screen and (width > 1120px) {
+        font-size: var(--fonte-size-xm);
+      }
       @media screen and (width > 1420px) {
+        flex: 0 0 50%;
       }
 
       .banner-card {
@@ -61,10 +68,15 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      border: 1px solid white;
 
       .magic__card {
         height: 20vh;
-        margin: 0 0 11vh;
+        margin: 0 0 10rem;
+
+        @media screen and (width > 1120px) {
+          min-height: 5rem;
+        }
         .task {
           position: relative;
           overflow: hidden;
@@ -77,7 +89,8 @@
             padding: var(--padding-m);
             width: 100%;
             position: relative;
-            background: #1f1e1f;
+            /* background: #1f1e1f; */
+            background-color: #000;
             color: #ccc;
             border-radius: 1rem;
             box-shadow: 0 0 15px rgba(236, 4, 4, 0.8);

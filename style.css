@@ -14,9 +14,10 @@
 :root {
   /* Cores */
   --cor-neutra-dark: #1f1e1f;
-  --cor-primary-red: #ed0132ff;
+  --cor-primary-red: #ed0132;
   --cor-green-informative: #87e987;
 
+  --cor-primaria-dark: #70071c;
   --cor-primaria-dark: #c13724;
   --cor-primaria-light: #ee6451;
   --cor-primaria-bg-menu: rgba(238, 100, 81, 0.4);
