@@ -1,7 +1,7 @@
 .about {
   width: 90%;
   height: auto;
-  background-color: #232220;
+  background-color: var(--bg-secondary);
   padding: 0 var(--padding-m) var(--padding-m) var(--padding-m);
   box-sizing: border-box;
   border-radius: 2rem;
@@ -89,12 +89,11 @@
             padding: var(--padding-m);
             width: 100%;
             position: relative;
-            /* background: #1f1e1f; */
-            background-color: #000;
+            background-color: var(--cor-neutra-dark);
             color: #ccc;
             border-radius: 1rem;
             box-shadow: 0 0 15px rgba(236, 4, 4, 0.8);
-            font-size: var(--fonte-size-xm);
+            font-size: var(--fonte-size-m);
           }
 
           .abstract {
