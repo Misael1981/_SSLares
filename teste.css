@@ -1,0 +1,110 @@
+.header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: var(--cor-neutra-dark);
+  width: 100%;
+  height: 5rem;
+  font-family: var(--font-nunito);
+  z-index: 11;
+
+  @media screen and (width > 1020px) {
+    height: 7rem;
+  }
+
+  .header__nav {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__img {
+      width: 4rem;
+      height: auto;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+      @media screen and (width > 1020px) {
+        width: 7rem;
+      }
+    }
+
+    .header__nav-list {
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+      transition: 0.3s;
+      z-index: 10;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      box-sizing: border-box;
+      padding: 3rem;
+
+      li a {
+        color: #ccc;
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      &.open {
+        visibility: visible;
+        height: calc(100vh - 5rem);
+      }
+
+      @media screen and (width > 1020px) {
+        visibility: visible;
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        backdrop-filter: inherit;
+        flex-direction: row;
+        padding: 1px;
+
+        li a {
+          font-size: 1.5rem;
+        }
+
+        li:last-child {
+          padding-left: 3rem;
+        }
+      }
+      @media screen and (width > 1200px) {
+        li a {
+          font-size: var(--fonte-size-l);
+        }
+      }
+    }
+  }
+}
+
+.header-link {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-primary-red);
+    transition: width 0.3s ease;
+  }
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+}

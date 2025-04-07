@@ -38,23 +38,29 @@
   <body>
     <!-- ===== Header ===== -->
     <header class="header">
+      <div class="header__img">
+        <img
+          src="./assets/img/logo-sslares_red-white.svg"
+          alt="Logo da SSLares"
+        />
+      </div>
       <nav class="header__nav">
-        <div class="header__img">
-          <img src="./assets/img/logo.svg" alt="Logo da SSLares" />
+        <div class="modos">
+          <button id="modos-btn"></button>
         </div>
         <ul class="header__nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="./loja.html">Produtos</a></li>
-          <li><a href="#">Calculadora</a></li>
-          <li><a href="#">Seja parceiro</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a class="menu-item__header" href="#">Home</a></li>
+          <li><a class="menu-item__header" href="./loja.html">Produtos</a></li>
+          <li><a class="menu-item__header" href="#">Calculadora</a></li>
+          <li><a class="menu-item__header" href="#">Seja parceiro</a></li>
+          <li><a class="menu-item__header" href="#">Contato</a></li>
         </ul>
-        <button id="btn-menu">
-          <span class="linha"></span>
-          <span class="linha"></span>
-          <span class="linha"></span>
-        </button>
       </nav>
+      <button title="botão menu" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
     </header>
     <main>
       <!-- ===== Carrossel Home ===== -->
@@ -62,17 +68,38 @@
         <div class="swiper swiper-home">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./assets/img/img-01.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/img-02.png" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/img/img-03.png" alt="" />
+              <img
+                class="swiper__mobile"
+                src="./assets/img/imagem-mobile-01.png"
+                alt=""
+              />
+              <img
+                class="swiper__desktop"
+                src="./assets/img/imagem-desktop-01.png"
+                alt=""
+              />
             </div>
             <div class="swiper-slide">
               <img
-                src="./assets/img/carrossel-mobile-credibilidade.png"
+                class="swiper__mobile"
+                src="./assets/img/imagem-mobile-02.png"
+                alt=""
+              />
+              <img
+                class="swiper__desktop"
+                src="./assets/img/imagem-desktop-02.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper__mobile"
+                src="./assets/img/imagem-mobile-03.png"
+                alt=""
+              />
+              <img
+                class="swiper__desktop"
+                src="./assets/img/imagem-desktop-03.png"
                 alt=""
               />
             </div>

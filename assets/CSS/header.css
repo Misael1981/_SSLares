@@ -42,109 +42,128 @@
   position: sticky;
   top: 0;
   right: 0;
-  background-color: var(--cor-neutra-dark);
   width: 100%;
-  height: 5rem;
+  background-color: var(--bg-neutral);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: var(--padding-m);
   font-family: var(--font-nunito);
-  z-index: 11;
+  z-index: 2;
 
-  @media screen and (width > 1020px) {
-    height: 7rem;
+  .header__img {
+    width: 7rem;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .header__nav {
-    max-width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: absolute;
+    top: 5.5rem;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.7s;
 
-    .header__img {
-      width: 4rem;
+    &.open {
+      visibility: visible;
+      height: calc(100vh - 5rem);
+    }
+
+    @media screen and (width > 1020px) {
+      flex: 1;
+      position: static;
+      visibility: visible;
+      width: auto;
       height: auto;
+      background-color: transparent;
+      backdrop-filter: inherit;
+      flex-direction: row;
 
-      & img {
-        width: 100%;
-        height: auto;
-      }
-      @media screen and (width > 1020px) {
-        width: 7rem;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .header__nav-list {
-      background-color: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(10px);
-      position: absolute;
-      top: 5rem;
-      left: 0;
-      width: 100%;
-      height: 0;
-      visibility: hidden;
-      transition: 0.3s;
-      overflow: hidden;
-      z-index: 10;
-
+      flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      justify-content: end;
+      gap: var(--gap-xl);
       box-sizing: border-box;
-      padding: 3rem;
-
-      li a {
-        color: #ccc;
-        font-size: 2.5rem;
-        font-weight: 600;
-      }
-
-      &.open {
-        visibility: visible;
-        height: calc(100vh - 5rem);
-      }
+      padding-left: var(--padding-m);
 
       @media screen and (width > 1020px) {
-        visibility: visible;
-        position: static;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        backdrop-filter: inherit;
         flex-direction: row;
-        padding: 1px;
+      }
 
-        li a {
-          font-size: 1.5rem;
+      li .menu-item__header {
+        color: #ccc;
+        font-size: var(--fonte-size-xl);
+        font-weight: 700;
+        position: relative;
+        transition: color 0.7s ease;
+        letter-spacing: 1px;
+
+        @media screen and (width > 1020px) {
+          font-size: var(--fonte-size-xmm);
         }
 
-        li:last-child {
-          padding-left: 3rem;
+        &:hover,
+        &:focus {
+          color: var(--cor-primary-red);
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 0;
+          height: 4px;
+          background-color: var(--cor-primary-red);
+          transition: width 0.7s ease;
+        }
+        &:hover::before,
+        &:focus::before {
+          width: 100%;
         }
       }
-      @media screen and (width > 1200px) {
-        li a {
-          font-size: var(--fonte-size-l);
+    }
+
+    .modos {
+      order: 1;
+      box-sizing: border-box;
+      padding: var(--padding-5xl) var(--padding-m);
+      width: 100%;
+      display: flex;
+      justify-content: end;
+
+      @media screen and (width > 1020px) {
+        padding: 0 0 0 var(--padding-xxl);
+        justify-content: center;
+        width: auto;
+      }
+
+      button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+        svg {
+          color: orangered;
         }
       }
     }
   }
 }
-
-/* .header-link {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--cor-primary-red);
-    transition: width 0.3s ease;
-  }
-  &:hover::after,
-  &:focus::after {
-    width: 100%;
-  }
-} */

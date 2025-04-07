@@ -39,3 +39,16 @@
     background: #ccc;
   }
 }
+
+.swiper__desktop {
+  display: none;
+}
+
+@media screen and (width > 1120px) {
+  .swiper__mobile {
+    display: none;
+  }
+  .swiper__desktop {
+    display: block;
+  }
+}
