@@ -1,7 +1,7 @@
 .calculator {
   width: 95%;
   margin: 0 auto;
-  color: #ccc;
+  color: var(--color-primary);
 
   @media screen and (width > 1250px) {
     width: 85%;

@@ -127,11 +127,6 @@ body {
   transform: scale(1.1);
 }
 
-.main {
-  background-color: #111111;
-  width: 100%;
-}
-
 /* ===== Títulos Container ===== */
 .title-container {
   padding: var(--padding-4xl) var(--padding-xl);
