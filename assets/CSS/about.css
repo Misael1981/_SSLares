@@ -24,9 +24,9 @@
     @media screen and (width > 1120px) {
       flex-direction: row;
     }
-    @media screen and (width > 1420px) {
+    /* @media screen and (width > 1420px) {
       margin-top: -3rem;
-    }
+    } */
 
     .about__container-content {
       flex: 1;
@@ -76,9 +76,9 @@
         @media screen and (width > 1120px) {
           min-height: 6rem;
         }
-        /* @media screen and (width > 1220px) {
-          margin: 0 0 15rem;
-        } */
+        @media screen and (width > 1420px) {
+          margin: 0 0 8rem;
+        }
         .task {
           position: relative;
           overflow: hidden;

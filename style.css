@@ -75,9 +75,11 @@
 }
 
 [data-theme="light"] {
-  --bg-primary: #e9e0e0;
+  /* --bg-primary: #e9e0e0; */
+  --bg-primary: #e4e4e4;
   /* --bg-secondary: #dad7d7; */
-  --bg-secondary: #b1b1b1;
+  /* --bg-secondary: #b1b1b1; */
+  --bg-secondary: #f4f4f4;
   --color-primary: #080808;
 }
 
