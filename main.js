@@ -3,7 +3,6 @@ import { swiperProducts } from "./assets/Js/swiperProducts.js";
 import { swiperStory } from "./assets/Js/swiperStory.js";
 import { defineModos } from "./assets/Js/defineModos.js";
 import { activateCalculator } from "./assets/Js/activateCalculator.js";
-import { describesProducts } from "./assets/Js/describesProducts.js";
 import { modalCalculator } from "./assets/Js/modalCalculator.js";
 
 const btnMenu = document.getElementById("btn-menu");
@@ -29,5 +28,4 @@ swiperHome();
 swiperProducts();
 swiperStory();
 activateCalculator();
-describesProducts();
 modalCalculator();

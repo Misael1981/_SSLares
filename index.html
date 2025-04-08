@@ -39,11 +39,13 @@
     <!-- ===== Header ===== -->
     <header class="header">
       <div class="header__img">
-        <img
-          src="./assets/img/logo-sslares_red-white.svg"
-          alt="Logo da SSLares"
-        />
-      </div>
+        <a href="#about">
+          <img
+            src="./assets/img/logo-sslares_red-white.svg"
+            alt="Logo da SSLares"
+          />
+                </div>
+        </a>
       <nav class="header__nav">
         <div class="modos">
           <button id="modos-btn"></button>
@@ -56,8 +58,10 @@
               >Calculadora</a
             >
           </li>
-          <li><a class="menu-item__header" href="#">Seja parceiro</a></li>
-          <li><a class="menu-item__header" href="#">Contato</a></li>
+          <li>
+            <a class="menu-item__header" href="#partner">Seja parceiro</a>
+          </li>
+          <li><a class="menu-item__header" href="#contact">Contato</a></li>
         </ul>
       </nav>
       <button title="botão menu" id="btn-menu">
@@ -116,69 +120,6 @@
         <div class="title-container">
           <p class="subheader">Produtos</p>
         </div>
-        <!-- === Descrição dos Produtos === -->
-        <article class="ourProducts__descriptiveText">
-          <div class="product">
-            <div class="product__header">
-              <h3 class="product-title">Espaçadores / Niveladores</h3>
-              <button class="product-see">Ver mais</button>
-            </div>
-            <div class="product__content product-close">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-                maiores perspiciatis, repellendus quod minus eveniet laboriosam
-                qui expedita dolorem obcaecati et? Eveniet quas dignissimos
-                possimus culpa nisi itaque, enim nihil corporis numquam ratione
-                quae excepturi aspernatur architecto consectetur obcaecati.
-                Officiis natus officia accusantium nesciunt modi maiores
-                sapiente laudantium corrupti assumenda?
-              </p>
-
-              <h3 class="product-title product-vissible">Cunhas</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam eveniet enim in facilis eum consectetur error. Illo
-                facere molestiae nostrum ducimus assumenda, iure officiis ipsa
-                sint modi eius hic culpa nobis quidem dolor et ex in voluptate
-                aperiam aut beatae labore velit qui iusto officia. Velit aperiam
-                fuga quod vero.
-              </p>
-
-              <h3 class="product-title product-vissible">Desempenadeiras</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam eveniet enim in facilis eum consectetur error. Illo
-                facere molestiae nostrum ducimus assumenda, iure officiis ipsa
-                sint modi eius hic culpa nobis quidem dolor et ex in voluptate
-                aperiam aut beatae labore velit qui iusto officia. Velit aperiam
-                fuga quod vero.
-              </p>
-
-              <h3 class="product-title product-vissible">Ralos</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam eveniet enim in facilis eum consectetur error. Illo
-                facere molestiae nostrum ducimus assumenda, iure officiis ipsa
-                sint modi eius hic culpa nobis quidem dolor et ex in voluptate
-                aperiam aut beatae labore velit qui iusto officia. Velit aperiam
-                fuga quod vero.
-              </p>
-
-              <h3 class="product-title product-vissible">Espumas</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam eveniet enim in facilis eum consectetur error. Illo
-                facere molestiae nostrum ducimus assumenda, iure officiis ipsa
-                sint modi eius hic culpa nobis quidem dolor et ex in voluptate
-                aperiam aut beatae labore velit qui iusto officia. Velit aperiam
-                fuga quod vero.
-              </p>
-            </div>
-          </div>
-          <div class="product__output product-close">
-            <button class="product-see-output">Ver menos</button>
-          </div>
-        </article>
         <!-- === Carrossel === -->
         <div class="swiper swiper-products">
           <div class="swiper-wrapper">
@@ -333,7 +274,7 @@
         </div>
       </section>
       <!-- ===== Sobre nós ===== -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="title-container">
           <p class="subheader">Sobre nós</p>
         </div>
@@ -726,7 +667,7 @@
         </div>
       </section>
       <!-- ===== Contato ===== -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__banner">
           <div class="title-container contact-title">
             <p class="subheader">Contato</p>
