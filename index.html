@@ -51,7 +51,11 @@
         <ul class="header__nav-list">
           <li><a class="menu-item__header" href="#">Home</a></li>
           <li><a class="menu-item__header" href="./loja.html">Loja</a></li>
-          <li><a class="menu-item__header" href="#">Calculadora</a></li>
+          <li>
+            <a class="menu-item__header" id="openCalculator" href="#"
+              >Calculadora</a
+            >
+          </li>
           <li><a class="menu-item__header" href="#">Seja parceiro</a></li>
           <li><a class="menu-item__header" href="#">Contato</a></li>
         </ul>
@@ -193,14 +197,11 @@
             <div class="swiper-slide">
               <img
                 src="./assets/img/img_ourProducts/sortidos.png"
-                alt="Cunhas e espaçadores de plástico para o assentamento de pisos"
+                alt="Cunhas de plástico para o assentamento de pisos"
               />
               <div class="ourProducts__content">
-                <h3>Cunha & Espaçadores</h3>
-                <p>
-                  Cunha espaçadores para nivelamento de pisos e revestimentos
-                  50un
-                </p>
+                <h3>Cunha</h3>
+                <p>Cunha para nivelamento de pisos e revestimentos 50un</p>
                 <a href="#" class="btn">Ver mais</a>
               </div>
             </div>
@@ -806,6 +807,105 @@
       </div>
     </footer>
 
+    <!-- ===== Modal Calculadora ===== -->
+    <section class="modalCalculator" id="modalCalculator">
+      <section class="calculator">
+        <div class="modalHeader">
+          <div class="title-container">
+            <p class="subheader">Calculadora</p>
+          </div>
+          <span class="close"><i class="bi bi-x-circle"></i></span>
+        </div>
+        <div class="calculator-header">
+          <div class="calculator-header__description">
+            <div class="calculator-header__description-txt">
+              <h4>Calcule de forma rápido e fácil</h4>
+              <p>
+                Com nossa calculadora de materiais, você descobre de forma
+                rápida e fácil a quantidade recomendada de materiais para fazer
+                a separação e nivelamento de cada piso. Você só precisa escolher
+                o tipo de medida (cm ou in), nos informar o comprimento do piso
+                e sua largura. Com essas informações nossa calculadora irá te
+                dizer o recomendado para cada lado do piso e a somatória final,
+                levando em considerações todos os lados.
+              </p>
+            </div>
+            <div class="calculator-header__description-form">
+              <form>
+                <label>Qual o tipo de medida?</label>
+                <select class="seletor__calculadora">
+                  <option value="opcao1">Centímetro (cm)</option>
+                  <option value="opcao2">Polegadas (in)</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="calculator-header__image">
+            <img
+              src="./assets/img/mostruario-calculadora.jpg"
+              alt="Mostruário demostrando a quantida de espaçadores por plástico"
+            />
+          </div>
+        </div>
+        <div class="calculator__inputs">
+          <form>
+            <fieldset id="calculatorOne">
+              <label>Comprimento X</label>
+              <div>
+                <input
+                  type="number"
+                  id="comprimentoX"
+                  placeholder="Insira a medida"
+                />
+                <button type="button" id="btn-comprimentoX" class="calculate">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <label for="comprimentoX">
+                Recomendado:
+                <span class="output-input" id="recomendadaX"></span>
+              </label>
+            </fieldset>
+
+            <fieldset id="calculatorTwo">
+              <label>Comprimento Y</label>
+              <div>
+                <input
+                  type="number"
+                  id="comprimentoY"
+                  placeholder="Insira a medida"
+                />
+                <button type="button" id="btn-comprimentoY" class="calculate">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <label for="comprimentoY">
+                Recomendado:
+                <span class="output-input" id="recomendadaY"></span>
+              </label>
+            </fieldset>
+
+            <fieldset id="calculatorThree">
+              <label>Área Total de Assentamento</label>
+              <div>
+                <input
+                  type="number"
+                  id="areaTotal"
+                  placeholder="Insira a medida"
+                />
+                <button type="button" id="btn-areaTotal" class="calculate">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+              <label for="areaTotal">
+                Recomendado:
+                <span class="output-input" id="comprimentoTotal"></span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </section>
     <!-- ===== SWIPER ===== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
