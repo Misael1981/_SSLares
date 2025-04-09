@@ -4,6 +4,8 @@ import { swiperStory } from "./assets/Js/swiperStory.js";
 import { defineModos } from "./assets/Js/defineModos.js";
 import { activateCalculator } from "./assets/Js/activateCalculator.js";
 import { modalCalculator } from "./assets/Js/modalCalculator.js";
+import { searchField } from "./assets/Js/searchField.js";
+import { descriptionProducts } from "./assets/Js/descriptionProducts.js";
 
 const btnMenu = document.getElementById("btn-menu");
 const navbar = document.querySelector(".header__nav");
@@ -23,9 +25,11 @@ menuItens.forEach((item) => {
 
 // ===== Modulos =====
 
+descriptionProducts();
 defineModos();
 swiperHome();
 swiperProducts();
+searchField();
 swiperStory();
 activateCalculator();
 modalCalculator();

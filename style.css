@@ -10,12 +10,15 @@
 @import url("./assets/CSS/productsStore.css");
 @import url("./assets/CSS/calculator.css");
 @import url("./assets/CSS/contact.css");
+@import url("./assets/CSS/search.css");
+@import url("./assets/CSS/descriptionProducts.css");
 
 :root {
   /* Cores */
   --bg-neutral: #000;
   --bg-primary: #111111;
   --bg-secondary: #232220;
+  --color-box-shadow: rgba(255, 255, 255, 0.1);
   --color-primary: #ccc;
 
   --branco: #f8f8f8;
@@ -81,6 +84,7 @@
   /* --bg-secondary: #b1b1b1; */
   --bg-secondary: #f4f4f4;
   --color-primary: #080808;
+  --color-box-shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {

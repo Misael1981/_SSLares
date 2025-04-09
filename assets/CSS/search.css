@@ -1,0 +1,30 @@
+.search {
+  position: relative;
+  width: 100%;
+
+  .productSearch {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+
+    li {
+      a {
+        display: block;
+        color: var(--color-primary);
+        font-size: var(--fonte-size-xm);
+        margin: var(--margin-l);
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--cor-primary-red);
+        }
+      }
+    }
+  }
+}
