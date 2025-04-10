@@ -106,6 +106,7 @@
             align-items: center;
             gap: var(--gap-m);
             text-align: center;
+            border: 1px solid var(--cor-primary-red);
             transition: 0.3s ease all;
 
             h6 {
