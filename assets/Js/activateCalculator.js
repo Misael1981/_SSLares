@@ -79,8 +79,8 @@ export function activateCalculator() {
         treatingInput(inputAreaTotal, outputComprimentoTotal)
       ) {
         const areaPecaM2 =
-          (comprimentoXValue / 100) * (comprimentoYValue / 100); // Assumindo entrada em cm
-        const numeroPecas = Math.ceil(areaTotalValue / areaPecaM2);
+          (comprimentoXValue / 100) * (comprimentoYValue / 100); // cm para metros
+        const numeroPecas = Math.ceil(areaTotalValue / areaPecaM2); // areaTotal já está em m²
 
         // Estima a quantidade mínima por peça baseada na maior dimensão
         let minEspacadoresPorPeca = 4;
