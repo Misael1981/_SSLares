@@ -1,7 +1,7 @@
 export function descriptionProducts() {
   const produtos = {
     cunha: {
-      imagem1: "cunha-secundaria-01.png",
+      imagem1: "cunha-secundaria-03.png",
       imagem2: "cunha.png",
       imagem3: "cunha-secundaria-02.png",
       titulo: "Cunha",
@@ -111,14 +111,14 @@ export function descriptionProducts() {
     raloLinear: {
       imagem1: "ralo-linear-02.png",
       imagem2: "ralo-linear.png",
-      imagem3: "ralo-linear-02.png",
+      imagem3: "ralo-linear-03.png",
       titulo: "Ralo oculto",
       descricao:
         "O Ralo Linear Oculto 6x50cm serve para Bordas de Piscinas,Quintal, Áreas Externas, Banheiros, Saunas, Decks e muito mais. Usa o próprio piso ou porcelanato como acabamento, deixando o ambiente discreto, harmônico e sofisticado.",
       quantidade: "Caixas com 20 e 10 unidades",
-      altura: "",
-      largura: "",
-      comprimento: "",
+      altura: "7cm",
+      largura: "6cm",
+      comprimento: "50cm",
     },
     raloInvisivel: {
       imagem1: "ralo-invisivel-02.png",
