@@ -21,7 +21,7 @@
     @media screen and (width > 720px) {
       padding: 0 var(--padding-xl) var(--padding-m);
     }
-    @media screen and (width > 1620px) {
+    @media screen and (width > 1220px) {
       flex-direction: row;
       justify-content: center;
       align-items: center;
