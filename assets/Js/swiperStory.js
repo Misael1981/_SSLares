@@ -20,14 +20,11 @@ export function swiperStory() {
       768: {
         slidesPerView: 2,
       },
-      991: {
-        slidesPerView: 3,
-      },
-      1500: {
+      1800: {
         slidesPerView: 3,
       },
       2000: {
-        slidesPerView: 6,
+        slidesPerView: 4,
       },
     },
   });

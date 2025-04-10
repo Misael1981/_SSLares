@@ -23,6 +23,13 @@ menuItens.forEach((item) => {
   });
 });
 
+// ===== Função que escolhe imagem da descrição dos produtos
+
+// function changeImage(imgName) {
+//   const img = document.querySelector(".img-main");
+//   img.src = `./assets/img/imagens-StoreProducts/${imgName}`;
+// }
+
 // ===== Modulos =====
 
 descriptionProducts();

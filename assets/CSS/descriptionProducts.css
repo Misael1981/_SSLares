@@ -19,14 +19,18 @@
         box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: var(--gap-xl);
+        gap: var(--gap-xxl);
         padding: var(--padding-l);
         box-sizing: border-box;
 
         @media screen and (width > 1220px) {
           flex: 1 0 25rem;
+          height: 35rem;
+        }
+        @media screen and (width > 1420px) {
+          height: 40rem;
         }
         .image-main {
           border: 5px solid var(--color-primary);
@@ -45,6 +49,10 @@
             img {
               margin: 0 auto;
             }
+          }
+
+          @media screen and (width > 1620px) {
+            max-width: 50%;
           }
 
           img {
@@ -89,6 +97,7 @@
         }
       }
       .product-description {
+        width: 100%;
         background-color: var(--bg-primary);
         border-radius: 1rem;
         box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.8);
@@ -102,19 +111,30 @@
 
         @media screen and (width > 1220px) {
           flex: 1 0 25rem;
+          height: 35rem;
+        }
+        @media screen and (width > 1420px) {
+          height: 40rem;
         }
 
         h3 {
           margin-bottom: var(--margin-xl);
-          font-size: var(--font-size-xxl);
+          font-size: var(--fonte-size-l);
           color: var(--cor-primary-red);
           font-weight: 700;
           text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+          @media screen and (width > 1420px) {
+            font-size: var(--fonte-size-l);
+          }
         }
 
         div {
           p {
             font-size: var(--fonte-size-m);
+
+            @media screen and (width > 1620px) {
+              font-size: var(--fonte-size-xmm);
+            }
 
             strong {
               font-weight: 700;
@@ -125,6 +145,10 @@
             font-size: var(--fonte-size-xmm);
             font-weight: 600;
             padding: var(--padding-m) 0;
+
+            @media screen and (width > 1420px) {
+              font-size: var(--fonte-size-l);
+            }
           }
         }
       }
