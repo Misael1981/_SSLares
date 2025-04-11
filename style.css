@@ -78,10 +78,7 @@
 }
 
 [data-theme="light"] {
-  /* --bg-primary: #e9e0e0; */
   --bg-primary: #e4e4e4;
-  /* --bg-secondary: #dad7d7; */
-  /* --bg-secondary: #b1b1b1; */
   --bg-secondary: #f4f4f4;
   --color-primary: #080808;
   --color-box-shadow: rgba(0, 0, 0, 0.1);
@@ -121,10 +118,15 @@ body {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 2.5rem 1rem 2.3rem;
-  background: linear-gradient(130deg, red 93%, transparent 90%);
+  background: linear-gradient(
+    130deg,
+    var(--cor-primary-red) 93%,
+    transparent 90%
+  );
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
+  transition: 0.3s;
 }
 
 .btn:hover {

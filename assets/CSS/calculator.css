@@ -41,6 +41,7 @@
 
         p {
           font-size: var(--fonte-size-m);
+          margin-bottom: var(--margin-m);
         }
       }
     }
