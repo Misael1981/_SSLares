@@ -74,6 +74,7 @@
           font-size: var(--fonte-size-m);
           width: 100%;
           margin: 1rem 0;
+          color: black;
 
           input,
           textarea {

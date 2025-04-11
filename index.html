@@ -39,7 +39,7 @@
     <!-- ===== Header ===== -->
     <header class="header">
       <div class="header__img">
-        <a href="#about">
+        <a aria-label="Acessar seção Sobre nós da SsLares." href="#about">
           <img
             src="./assets/img/logo-sslares_red-white.svg"
             alt="Logo da SSLares"
@@ -48,7 +48,10 @@
       </div>
       <nav class="header__nav">
         <div class="modos">
-          <button id="modos-btn"></button>
+          <button
+            aria-label="Botão para fazer a alternancia do modo de cor do site"
+            id="modos-btn"
+          ></button>
         </div>
         <ul class="header__nav-list">
           <li><a class="menu-item__header" href="#">Home</a></li>
@@ -95,7 +98,7 @@
               />
               <img
                 class="swiper__desktop"
-                src="./assets/img/home/home-02-mobile.png"
+                src="./assets/img/home/home-02-desktop.png"
                 alt=""
               />
             </div>
@@ -490,6 +493,7 @@
                   type="text"
                   id="username"
                   placeholder="Digite o nome do usuario..."
+                  required
                 />
                 <span></span>
               </label>
@@ -500,6 +504,7 @@
                   type="email"
                   id="email"
                   placeholder="Digite o seu email..."
+                  required
                 />
                 <span></span>
               </label>
@@ -510,6 +515,7 @@
                   type="tel"
                   id="telefone"
                   placeholder="Digite seu telefone..."
+                  required
                 />
                 <span></span>
               </label>
@@ -520,6 +526,7 @@
                   type="text"
                   id="cidade"
                   placeholder="Digite sua cidade..."
+                  required
                 />
                 <span></span>
               </label>
@@ -531,6 +538,7 @@
                   name="sobre"
                   rows="4"
                   cols="50"
+                  maxlength="500"
                   placeholder="Conte um pouco sobre você..."
                 ></textarea>
               </label>
@@ -725,7 +733,9 @@
               <ul>
                 <li>
                   <h6>Nossas Mídias</h6>
-                  <a href="#"><i class="bi bi-whatsapp"></i>035 991972424</a>
+                  <a aria-label="Whatsapp SsLares" href="#"
+                    ><i class="bi bi-whatsapp"></i>035 991972424</a
+                  >
                 </li>
                 <li>
                   <a href="mailto:sslaresmg@gmail.com"
@@ -734,10 +744,14 @@
                   >
                 </li>
                 <li>
-                  <a href="#"><i class="bi bi-instagram"></i>Instagram</a>
+                  <a aria-label="Instagram SsLares" href="#"
+                    ><i class="bi bi-instagram"></i>Instagram</a
+                  >
                 </li>
                 <li>
-                  <a href="#"><i class="bi bi-linkedin"></i>Linkedin</a>
+                  <a aria-label="Linkedin SsLares" href="#"
+                    ><i class="bi bi-linkedin"></i>Linkedin</a
+                  >
                 </li>
               </ul>
             </div>
@@ -753,6 +767,7 @@
         </div>
 
         <iframe
+          title="Mapa interativo da localização da Ss Lares"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.845996454735!2d-46.04914222583669!3d-22.156019888389967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cbcda8d8294417%3A0xe6f9bf5c0cad41a1!2sSSLARES!5e0!3m2!1sen!2sbr!4v1715625569113!5m2!1sen!2sbr"
           style="border: 0"
           allowfullscreen=""
@@ -772,16 +787,24 @@
         />
         <ul class="links-dev">
           <li>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a aria-label="Whatsapp da Mb Connect" href="#"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="bi bi-github"></i></a>
+            <a aria-label="GitHub da Mb Connect" href="#"
+              ><i class="bi bi-github"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Linkedin da Mb Connect" href="#"
+              ><i class="bi bi-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a aria-label="Instagram da Mb Connect" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
           </li>
         </ul>
       </section>
@@ -814,13 +837,11 @@
               </p>
             </div>
             <div class="calculator-header__description-form">
-              <form>
-                <label>Qual o tipo de medida?</label>
-                <select class="seletor__calculadora">
-                  <option value="opcao1">Centímetro (cm)</option>
-                  <option value="opcao2">Polegadas (in)</option>
-                </select>
-              </form>
+              <h4>Qual o tipo de medida?</h4>
+              <p>
+                * Favor utilizar centímetros para o tamanho de piso e metros
+                para calcular a área total
+              </p>
             </div>
           </div>
           <div class="calculator-header__image">
