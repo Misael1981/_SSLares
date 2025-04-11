@@ -157,3 +157,56 @@ body {
     }
   }
 }
+
+/* === Ícone de Whatsapp === */
+
+.whatsapp a {
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  display: flex; /* Para alinhar o ícone e o texto */
+  align-items: center; /* Alinhar verticalmente */
+  background-color: #25d366; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  border-radius: 5px; /* Borda arredondada */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  z-index: 20;
+  opacity: 0.8; /* Um pouco de transparência */
+  transition: opacity 0.3s ease-in-out; /* Transição suave para a opacidade */
+  text-decoration: none; /* Remover sublinhado do link */
+}
+
+.whatsapp a:hover {
+  opacity: 1; /* Remover transparência no hover */
+}
+
+.whatsapp a .bi-whatsapp {
+  font-size: 2rem; /* Ajuste o tamanho do ícone */
+  margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
+}
+
+.whatsapp a .whatsapp-text {
+  font-size: 1rem; /* Tamanho do texto */
+  white-space: nowrap; /* Evitar que o texto quebre em várias linhas */
+  opacity: 0; /* Inicialmente invisível */
+  margin-left: -2rem; /* Esconder inicialmente movendo para a esquerda */
+  transition: opacity 0.3s ease-in-out, margin-left 0.3s ease-in-out; /* Transição suave */
+}
+
+.whatsapp a:hover .whatsapp-text {
+  opacity: 1; /* Tornar o texto visível no hover */
+  margin-left: 0; /* Mover o texto para a posição normal */
+}
+
+@media (max-width: 768px) {
+  .whatsapp a .whatsapp-text {
+    display: none;
+  }
+  .whatsapp a {
+    padding: 0.5rem; /* Ajustar o padding quando só tem o ícone */
+  }
+  .whatsapp a .bi-whatsapp {
+    font-size: 3rem; /* Manter o tamanho do ícone em telas menores */
+    margin-right: 0;
+  }
+}
