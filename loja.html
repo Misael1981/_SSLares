@@ -38,7 +38,7 @@
     <!-- ===== Header ===== -->
     <header class="header">
       <div class="header__img">
-        <a aria-label="Acessar seção Sobre nós da SsLares." href="#about">
+        <a aria-label="destaca a logo da SsLares" href="#">
           <img
             src="./assets/img/logo-sslares_red-white.svg"
             alt="Logo da SSLares"
@@ -54,10 +54,16 @@
         </div>
         <ul class="header__nav-list">
           <li><a class="menu-item__header" href="./index.html">Home</a></li>
-          <li><a class="menu-item__header" href="#">Produtos</a></li>
-          <li><a class="menu-item__header" href="#">Calculadora</a></li>
-          <li><a class="menu-item__header" href="#">Seja parceiro</a></li>
-          <li><a class="menu-item__header" href="#">Contato</a></li>
+          <li>
+            <a class="menu-item__header" href="#productsStore">Produtos</a>
+          </li>
+          <li>
+            <a class="menu-item__header" href="#calculatorStore">Calculadora</a>
+          </li>
+          <li>
+            <a class="menu-item__header" href="#partner">Seja parceiro</a>
+          </li>
+          <li><a class="menu-item__header" href="#contact">Contato</a></li>
         </ul>
       </nav>
       <button title="botão menu" id="btn-menu">
@@ -73,7 +79,7 @@
         </div>
       </section>
       <!-- ===== Produtos Loja ===== -->
-      <section class="productsStore">
+      <section class="productsStore" id="productsStore">
         <div class="title-container">
           <p class="subheader">Produtos</p>
         </div>
@@ -438,7 +444,7 @@
         </div>
       </section>
       <!-- ===== Calculadora ===== -->
-      <section class="calculator">
+      <section class="calculator" id="calculatorStore">
         <div class="title-container">
           <p class="subheader">Calculadora</p>
         </div>
@@ -622,11 +628,7 @@
         </div>
       </section>
       <!-- ===== Contato ===== -->
-      <section
-        title="Mapa interativo da localização da Ss Lares"
-        class="contact"
-        id="contact"
-      >
+      <section class="contact" id="contact">
         <div class="contact__banner">
           <div class="title-container contact-title">
             <p class="subheader">Contato</p>
