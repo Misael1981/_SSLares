@@ -66,6 +66,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      gap: 10rem;
 
       @media screen and (width > 1120px) {
         gap: 15rem;
@@ -93,37 +94,6 @@
         @media screen and (width > 1120px) {
           margin: 0rem;
         }
-
-        /* @media screen and (width > 1120px) {
-          margin-bottom: 14rem;
-        }
-        @media screen and (width > 1420px) {
-          margin-bottom: 10rem;
-        }
-        @media screen and (width > 1520px) {
-          margin-bottom: 8rem;
-        }
-        @media screen and (width > 1720px) {
-          margin-bottom: 5rem;
-        }
-        @media screen and (width > 2020px) {
-          margin-bottom: 3rem;
-        } */
-        /* @media screen and (width > 1220px) {
-          margin: 0 0 16vh;
-        }
-        @media screen and (width > 1320px) {
-          margin: 0 0 13vh;
-        }
-        @media screen and (width > 1420px) {
-          margin: 0 0 8vh;
-        }
-        @media screen and (width > 1720px) {
-          margin: 0 0 5vh;
-        }
-        @media screen and (width > 2220px) {
-          margin: 0 0 3vh;
-        } */
         .task {
           position: relative;
           overflow: hidden;
