@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== Meta descripsion ===== -->
+    <meta
+      name="description"
+      content="A SSLares é uma empresa que produz os melhores espaçadores para pisos, cunhas para o assentamento de pisos, ralos linear e ralos invisível, desempenadeiras... entre outros produtos voltados para a construção civil"
+    />
 
     <!-- ===== Google Fonts ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,14 +43,14 @@
   <body>
     <!-- ===== Header ===== -->
     <header class="header">
-      <div class="header__img">
+      <h1 class="header__img">
         <a aria-label="Acessar seção Sobre nós da SsLares." href="#about">
           <img
             src="./assets/img/logo-sslares_red-white.svg"
             alt="Logo da SSLares"
           />
         </a>
-      </div>
+      </h1>
       <nav class="header__nav">
         <div class="modos">
           <button
@@ -54,7 +59,9 @@
           ></button>
         </div>
         <ul class="header__nav-list">
-          <li><a class="menu-item__header" href="#">Home</a></li>
+          <li>
+            <a class="menu-item__header" href="#" aria-current="page">Home</a>
+          </li>
           <li><a class="menu-item__header" href="./loja.html">Loja</a></li>
           <li>
             <a class="menu-item__header" id="openCalculator" href="#"
@@ -67,7 +74,12 @@
           <li><a class="menu-item__header" href="#contact">Contato</a></li>
         </ul>
       </nav>
-      <button title="botão menu" id="btn-menu">
+      <button
+        title="botão menu"
+        id="btn-menu"
+        aria-expanded="false"
+        aria-controls="header__nav-list"
+      >
         <span class="linha"></span>
         <span class="linha"></span>
         <span class="linha"></span>
@@ -82,60 +94,60 @@
               <img
                 class="swiper__mobile"
                 src="./assets/img/home/home-01-mobile.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
               <img
                 class="swiper__desktop"
                 src="./assets/img/home/home-01-desktop.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
             </div>
             <div class="swiper-slide">
               <img
                 class="swiper__mobile"
                 src="./assets/img/home/home-02-mobile.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
               <img
                 class="swiper__desktop"
                 src="./assets/img/home/home-02-desktop.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
             </div>
             <div class="swiper-slide">
               <img
                 class="swiper__mobile"
                 src="./assets/img/home/home-03-mobile.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
               <img
                 class="swiper__desktop"
                 src="./assets/img/home/home-03-desktop.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
             </div>
             <div class="swiper-slide">
               <img
                 class="swiper__mobile"
                 src="./assets/img/home/home-04-mobile.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
               <img
                 class="swiper__desktop"
                 src="./assets/img/home/home-04-desktop.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
             </div>
             <div class="swiper-slide">
               <img
                 class="swiper__mobile"
                 src="./assets/img/home/home-05-mobile.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
               <img
                 class="swiper__desktop"
                 src="./assets/img/home/home-05-desktop.png"
-                alt=""
+                alt="Imagem ilustrativa com referencia a SSLares"
               />
             </div>
           </div>
@@ -145,7 +157,7 @@
       <!-- ===== Carrossel Nossos Produtos ===== -->
       <section class="ourProducts">
         <div class="title-container">
-          <p class="subheader">Produtos</p>
+          <h2 class="subheader">Produtos</h2>
         </div>
         <!-- === Carrossel === -->
         <div class="swiper swiper-products">
@@ -303,7 +315,7 @@
       <!-- ===== Sobre nós ===== -->
       <section class="about" id="about">
         <div class="title-container">
-          <p class="subheader">Sobre nós</p>
+          <h2 class="subheader">Sobre nós</h2>
         </div>
 
         <div class="about__container">
@@ -462,7 +474,7 @@
       <!-- ===== Seja Parceiro ===== -->
       <section class="partner" id="partner">
         <div class="title-container">
-          <p class="subheader">Seja Parceiro</p>
+          <h2 class="subheader">Seja Parceiro</h2>
         </div>
 
         <div class="partner__bannerForm">
@@ -551,7 +563,7 @@
       <section class="benefits">
         <div class="benefits__header">
           <div class="title-container">
-            <p class="subheader">Seja Parceiro</p>
+            <h2 class="subheader">Seja Parceiro</h2>
           </div>
           <div class="benefits__header-content">
             <p>Qual a sua área de atuação?</p>
@@ -719,7 +731,7 @@
       <section class="contact" id="contact">
         <div class="contact__banner">
           <div class="title-container contact-title">
-            <p class="subheader">Contato</p>
+            <h2 class="subheader">Contato</h2>
           </div>
           <div class="contact-subtitle">
             <h5>

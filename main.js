@@ -14,12 +14,14 @@ const menuItens = document.querySelectorAll(".menu-item__header");
 btnMenu.addEventListener("click", (event) => {
   navbar.classList.toggle("open");
   btnMenu.classList.toggle("active-menu");
+  btnMenu.setAttribute("aria-expanded", navbar.classList.contains("open"));
 });
 
 menuItens.forEach((item) => {
   item.addEventListener("click", () => {
     navbar.classList.remove("open");
     btnMenu.classList.remove("active-menu");
+    btnMenu.setAttribute("aria-expanded", false);
   });
 });
 

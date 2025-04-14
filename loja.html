@@ -37,14 +37,14 @@
   <body>
     <!-- ===== Header ===== -->
     <header class="header">
-      <div class="header__img">
+      <h1 class="header__img">
         <a aria-label="destaca a logo da SsLares" href="#">
           <img
             src="./assets/img/logo-sslares_red-white.svg"
             alt="Logo da SSLares"
           />
         </a>
-      </div>
+      </h1>
       <nav class="header__nav">
         <div class="modos">
           <button
@@ -53,9 +53,10 @@
           ></button>
         </div>
         <ul class="header__nav-list">
-          <li><a class="menu-item__header" href="./index.html">Home</a></li>
           <li>
-            <a class="menu-item__header" href="#productsStore">Produtos</a>
+            <a class="menu-item__header" href="./index.html">Home</a>
+          </li>
+            <a class="menu-item__header" href="#productsStore" aria-current="page">Produtos</a>
           </li>
           <li>
             <a class="menu-item__header" href="#calculatorStore">Calculadora</a>
@@ -66,7 +67,12 @@
           <li><a class="menu-item__header" href="#contact">Contato</a></li>
         </ul>
       </nav>
-      <button title="botão menu" id="btn-menu">
+      <button
+        title="botão menu"
+        id="btn-menu"
+        aria-expanded="false"
+        aria-controls="header__nav-list"
+      >
         <span class="linha"></span>
         <span class="linha"></span>
         <span class="linha"></span>
@@ -81,7 +87,7 @@
       <!-- ===== Produtos Loja ===== -->
       <section class="productsStore" id="productsStore">
         <div class="title-container">
-          <p class="subheader">Produtos</p>
+          <h2 class="subheader">Produtos</h2>
         </div>
         <!-- === Campo de Busca === -->
         <form class="productsStore__search">
@@ -446,7 +452,7 @@
       <!-- ===== Calculadora ===== -->
       <section class="calculator" id="calculatorStore">
         <div class="title-container">
-          <p class="subheader">Calculadora</p>
+          <h2 class="subheader">Calculadora</h2>
         </div>
         <div class="calculator-header">
           <div class="calculator-header__description">
@@ -547,7 +553,7 @@
       <!-- ===== Seja Parceiro ===== -->
       <section class="partner" id="partner">
         <div class="title-container">
-          <p class="subheader">Seja Parceiro</p>
+          <h2 class="subheader">Seja Parceiro</h2>
         </div>
 
         <div class="partner__bannerForm">
@@ -631,7 +637,7 @@
       <section class="contact" id="contact">
         <div class="contact__banner">
           <div class="title-container contact-title">
-            <p class="subheader">Contato</p>
+            <h2 class="subheader">Contato</h2>
           </div>
           <div class="contact-subtitle">
             <h5>
