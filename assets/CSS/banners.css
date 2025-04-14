@@ -62,7 +62,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/corrente.png) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
   text-align: center;
   padding: var(--padding-4xl) 0;
@@ -76,7 +76,7 @@
     padding-top: 1rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   p {
