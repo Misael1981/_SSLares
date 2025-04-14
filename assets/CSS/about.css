@@ -67,11 +67,34 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @media screen and (width > 1120px) {
+        gap: 15rem;
+      }
+      @media screen and (width > 1220px) {
+        gap: 18rem;
+      }
+      @media screen and (width > 1420px) {
+        gap: 15rem;
+      }
+      @media screen and (width > 1420px) {
+        gap: 10rem;
+      }
+      @media screen and (width > 1720px) {
+        gap: 5rem;
+      }
+      @media screen and (width > 2220px) {
+        gap: 3rem;
+      }
+
       .magic__card {
         height: 20vh;
         margin: 0 0 22vh;
 
         @media screen and (width > 1120px) {
+          margin: 0rem;
+        }
+
+        /* @media screen and (width > 1120px) {
           margin-bottom: 14rem;
         }
         @media screen and (width > 1420px) {
@@ -85,7 +108,7 @@
         }
         @media screen and (width > 2020px) {
           margin-bottom: 3rem;
-        }
+        } */
         /* @media screen and (width > 1220px) {
           margin: 0 0 16vh;
         }
