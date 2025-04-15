@@ -69,9 +69,15 @@
       gap: 10rem;
 
       @media screen and (width > 1120px) {
+        gap: 20rem;
+      }
+      @media screen and (width > 1820px) {
         gap: 15rem;
       }
-      @media screen and (width > 1220px) {
+      @media screen and (width > 1820px) {
+        gap: 10rem;
+      }
+      /* @media screen and (width > 1220px) {
         gap: 18rem;
       }
       @media screen and (width > 1420px) {
@@ -85,7 +91,7 @@
       }
       @media screen and (width > 2220px) {
         gap: 3rem;
-      }
+      } */
 
       .magic__card {
         height: 20vh;
